@@ -356,7 +356,7 @@ header .nav ul li a:hover {
   position: relative;
   padding: 50px;
   background-color: #333;
-  background: url('cesta3.jpg');
+  /* background: url('cesta3.jpg'); */
   background-size: cover;
   background-position: 0 70%;
   color: white;
@@ -493,7 +493,8 @@ header .nav ul li a:hover {
 }
 
 #vehicles {
-  margin: 2em auto;
+  margin: 6em auto;
+
 }
 
 #vehicles .cards {
@@ -519,6 +520,17 @@ header .nav ul li a:hover {
 }
 #vehicles .card img {
   width: 100%;
+}
+
+#vehicles .card button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 150px;
+  padding: 1em 2em;
+  font-weight: bold;
+  margin: 2rem auto;
+  border-top-left-radius: 16px;
 }
 
 .conditions {
@@ -574,6 +586,7 @@ header .nav ul li a:hover {
   background-position: 0% 60%;
   height: 50vh;
   background-size: cover;
+  filter:grayscale();
 }
 
 .scrolling {
