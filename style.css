@@ -486,7 +486,10 @@ header .nav ul li a:hover {
 #vehicles h2 {
   text-align: center;
   padding: 1rem;
+  font-weight: bold;
   font-size: 2em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 #vehicles {
@@ -504,19 +507,15 @@ header .nav ul li a:hover {
   flex-direction: column;
   background-color: white;
   color: #000;  
-  border: 1px solid gray;
-  width: 300px;
+  width: 250px;
   border-radius: 8px;
   padding: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
-            0 8px 15px rgba(0, 0, 0, 0.1), 
-            0 12px 20px rgba(0, 0, 0, 0.15), 
-            0 18px 30px rgba(0, 0, 0, 0.2), 
-            0 25px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 #vehicles .card h4 {
-  font-size: 0.75em;
+  font-size: 1em;
+  text-align: center;
 }
 #vehicles .card img {
   width: 100%;
@@ -568,4 +567,23 @@ header .nav ul li a:hover {
   color: white;
   border: 1px solid white;
   border-radius: 25px;
+}
+
+.hotel-promo {
+  background: url('lounge.jpg');
+  background-position: 0% 60%;
+  height: 50vh;
+  background-size: cover;
+}
+
+.scrolling {
+  height: 50vh;
+  background-color: black;
+}
+
+.hotel-promo h2, .hotel-promo p, .hotel-promo a {
+  position: relative;
+  top: 20px;
+  left: 450px;
+  color: black;
 }
