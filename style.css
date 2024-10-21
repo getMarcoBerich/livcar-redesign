@@ -670,7 +670,6 @@ header .nav ul li a:hover {
 
 .news-container {
   width: 100vw;
-  height: 80vh;
   margin: 0 auto;
   padding: 3rem;
   display: flex;
@@ -697,6 +696,11 @@ header .nav ul li a:hover {
   color: white;
   font-weight: 400;
 }
+
+.news .headline {
+  text-align: center;
+}
+
 .news-container .card {
   width: 450px;
 }
