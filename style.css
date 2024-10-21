@@ -26,6 +26,9 @@ header {
   background-color: #202020;
   width: 100vw; /* Make the background stretch to full width */
   padding: 0; /* Remove padding from the header itself */
+  position: sticky;
+  z-index: 3;
+  top: 0;
 }
 
 /* Contact Details */
@@ -47,9 +50,8 @@ header .contact-details .container {
 
 header .whatsapp a {
   text-decoration: none;
-  color: rgb(37, 211, 102);
+  color: rgb(29, 174, 82);
   font-size: 2em;
-  fill: white;
 }
 
 header i {
@@ -585,6 +587,7 @@ header .nav ul li a:hover {
 
 .longterm h2 {
   text-transform: uppercase;
+  color: #f06292;
 }
 
 .longterm p {
