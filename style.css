@@ -695,7 +695,6 @@ header .nav ul li a:hover {
 
 .news h3 {
   color: white;
-  text-align: center;
   font-weight: 400;
 }
 .news-container .card {
@@ -736,7 +735,7 @@ header .nav ul li a:hover {
 }
 
 footer {
-  background-color: #3a3a3a;
+  background-color: black;
   color: white;
   padding: 2em;
   font-size: 0.8em;
