@@ -829,7 +829,7 @@ footer .icons a {
   }
 
   .longterm button {
-    top: 9em;
+    top: 5em;
   }
   .hotel-promo {
     width: 100%;
@@ -838,7 +838,7 @@ footer .icons a {
   }
 
   .hotel-promo h2 {
-    width: 50%;
+    width: 55%;
     margin: 0 auto;
     font-size: 1.1em;
   }
@@ -852,14 +852,14 @@ footer .icons a {
 
   .hotel-promo a {
     display: block;
-    margin: 6em auto;
+    margin: 5em auto;
     width: 90%;
   }
 
   .reasons h2 {
-    font-size: 1em;
+    font-size: 0.9em;
     width: 100%;
-    padding: 0   ;
+    padding: 0;
   }
   .reason-card {
     width: 90%; /* Make reason cards responsive */
