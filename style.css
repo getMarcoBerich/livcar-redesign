@@ -564,7 +564,7 @@ header .nav .mobile {
   color: black;
   font-weight: bold;
   letter-spacing: 1px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: fit-content;
@@ -835,6 +835,7 @@ footer .icons a {
     width: 100%;
     text-align: center;
     height: 25vh;
+    position: relative;
   }
 
   .hotel-promo h2 {
@@ -852,8 +853,12 @@ footer .icons a {
 
   .hotel-promo a {
     display: block;
-    margin: 5em auto;
+    margin: 0 auto;
+    padding: 1em 0;
     width: 90%;
+    position: absolute;
+    bottom: 1em;
+
   }
 
   .reasons h2 {
@@ -876,6 +881,12 @@ footer .icons a {
   }
   #vehicles .card {
     width: 90%; /* Make vehicle cards responsive */
+  }
+
+  #vehicles button {
+    width: 90%;
+    font-size: 0.8em;
+    font-weight: bold;
   }
 
   footer {
@@ -919,6 +930,9 @@ footer .icons a {
     align-items: center;
   }
 
+  footer .card {
+    align-items: center;
+  }
   footer .icons {
     flex-direction: column;
   }
