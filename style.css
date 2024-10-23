@@ -817,6 +817,7 @@ footer .icons a {
     width: 90%;
     height: 40vh;
     background-position: 40%;
+    position: relative;
   }
 
   .longterm h2 {
@@ -829,7 +830,10 @@ footer .icons a {
   }
 
   .longterm button {
-    top: 5em;
+    position: absolute;
+    bottom: 2em;
+    left: 1em;
+    top: unset;
   }
   .hotel-promo {
     width: 100%;
