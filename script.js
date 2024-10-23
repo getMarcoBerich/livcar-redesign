@@ -21,3 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     observer.observe(section); // Start observing the section
   });
+
+const searchButton = document.getElementsByClassName('search-button')[0];
+searchButton.addEventListener('click', e => {
+  window.location.href = 'https://livcar.hr/search/pickup/1729696140000/return/1730372400000/category/0'
+}); 
