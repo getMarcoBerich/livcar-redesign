@@ -10,7 +10,7 @@
 
 body {
   font-family: Montserrat;
-  min-height: 100vh; /* Ensure body covers at least full height */
+  min-height: 100vh;
   overflow-x: hidden;
   background-color: white;
 }
@@ -63,7 +63,6 @@ header .nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 header .nav .logo {
@@ -93,7 +92,7 @@ header .nav .lang-picker b {
 }
 
 header .nav .lang-picker img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
@@ -107,6 +106,12 @@ header .nav ul li a {
 
 header .nav ul li a:hover {
   color: #f06292;
+}
+
+header .nav .mobile {
+  color: white;
+  font-size: 2em;
+  display: none;
 }
 
 
@@ -259,81 +264,6 @@ header .nav ul li a:hover {
 
 .search-button:hover {
   background-color: #c2185b;
-}
-
-/* Carousel Section */
-.carousel {
-  background-color: white;
-}
-
-.carousel h2 {
-  margin-bottom: 2em;
-  text-align: center;
-  padding: 1rem;
-  font-weight: bold;
-  font-size: 2em;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #f06292;
-}
-.carousel-container {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-}
-
-.carousel-container:hover {
-  animation-play-state: paused;
-}
-
-.carousel-card {
-  color: black;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-}
-
-.carousel-card img {
-  width: 300px;
-  height: 200px;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-}
-
-.carousel-card .content {
-  background-color: rgb(236, 236, 236);
-  margin: 0 auto;
-  width: 90%;
-  padding: 16px;
-  position: relative;
-  bottom: 1.5em;
-  border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
-            0 8px 15px rgba(0, 0, 0, 0.1), 
-            0 12px 20px rgba(0, 0, 0, 0.15), 
-            0 18px 30px rgba(0, 0, 0, 0.2), 
-            0 25px 40px rgba(0, 0, 0, 0.3);
-
-}
-
-.carousel-card h3 {
-  font-size: 1.1em;
-  margin-bottom: 6px;
-}
-
-.carousel-card p {
-  font-size: 0.75em;
-}
-
-/* Infinite scrolling animation */
-@keyframes scroll {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(-100%);
-  }
 }
 
 /* Features Section */
@@ -813,4 +743,121 @@ footer .icons i {
 footer .icons a {
   text-decoration: none;
   color: #f06292;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+
+  /* Hide contact details on mobile */
+  .contact-details {
+    display: none;
+  }
+
+  header {
+    position: relative;
+    padding: 1em; /* Add some padding for better touch targets */
+  }
+
+  header .nav ul {
+    display: block;
+    width: 80%; /* Make the nav full-width */
+    height: auto; /* Adjust height for mobile */
+    background-color: #202020;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+
+  header .nav ul.active {
+    transform: translateX(0);
+  }
+
+  header .nav ul li {
+    padding: 1.5em; /* Adjust padding for touch targets */
+    font-size: 1.1em; /* Slightly increase font size for better readability */
+  }
+
+  header .nav .mobile {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .hero .search-form {
+    flex-direction: column;
+    padding: 1em; /* Add padding to form */
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .search-form input,
+  .search-button {
+    width: 100%; /* Make inputs full-width */
+    margin: 0.5em 0; /* Add margin for spacing */
+  }
+
+  .reason-card,
+  .reason-card-2 {
+    width: 90%; /* Make reason cards responsive */
+  }
+
+  #vehicles .cards {
+    flex-direction: column;
+  }
+  #vehicles .card {
+    width: 90%; /* Make vehicle cards responsive */
+  }
+
+  footer {
+    flex-direction: column; /* Stack footer items */
+    text-align: center; /* Center align footer text */
+  }
+
+  footer .card {
+    border-right: none; /* Remove border for single column */
+    margin-bottom: 1em; /* Add space between cards */
+  }
+
+  .hotel-promo {
+    padding: 1em; /* Reduce padding for mobile */
+    text-align: center; /* Center align text */
+  }
+
+  .longterm {
+    padding: 2em 1em; /* Adjust padding for mobile */
+  }
+
+  .news-container {
+    flex-direction: column;
+  }
+
+  .news img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  footer .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .icons {
+    flex-direction: column;
+  }
+
+  footer .icons i {
+    font-size: 4em;
+  }
 }

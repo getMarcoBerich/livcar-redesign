@@ -26,3 +26,10 @@ const searchButton = document.getElementsByClassName('search-button')[0];
 searchButton.addEventListener('click', e => {
   window.location.href = 'https://livcar.hr/search/pickup/1729696140000/return/1730372400000/category/0'
 }); 
+
+const mobileMenu = document.getElementsByClassName('mobile')[0];
+const ulMenu = document.querySelector('header .nav ul');
+
+mobileMenu.addEventListener('click', e => {
+  ulMenu.classList.toggle('active');
+})
